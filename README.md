@@ -1,5 +1,5 @@
 wechat-Development
-====
+
 # 微信小应用-小程序-demo-仿芒果TV (持续更新)
 
 由于时间的关系，没有办法写一个完整的说明，重点是页面展示效果，还有其中遇到的一些坑分享一下，后期不定期更新坑和DEMO
@@ -10,7 +10,7 @@ wechat-Development
 
 * 纯粹是对微信小程序的尝新以及大家分享研究，并无其他用途。
 
-## DEMO
+## DEMO (前方gif高能预警！！)
 
 ![](https://github.com/web-Marker/wechat-Development/raw/master/image/3.gif) 
 
