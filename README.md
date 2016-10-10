@@ -10,7 +10,7 @@ wechat-Development
 
 * 纯粹是对微信小程序的尝新以及大家分享研究，并无其他用途。
 
-## DEMO (前方gif高能预警！！)
+## DEMO (前方gif图高能预警，需等待，等待！！)
 
 ![](https://github.com/web-Marker/wechat-Development/raw/master/image/3.gif) 
 
