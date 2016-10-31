@@ -11,7 +11,7 @@
 </template>
 
 <template name="ub-list">
-    <template is="{{item.type=='small'?'listSmall':'listBig'}}" data="{{item}}" wx:for="{{newList}}" />
+    <template is="{{item.type=='small'?'listSmall':'listBig'}}" data="{{item}}" wx:for="{{newList}}" wx:key="*this"/>
 </template>
 
 <template name="listBig">
@@ -39,7 +39,7 @@
             <text class="more {{item.more?'show':'hide'}}">更多></text>
         </view>
         <view class="list-flex">
-            <block wx:for="{{item.list}}">
+            <block wx:for="{{item.list}}" wx:key="*this">
                 <view class="listBox">
                     <navigator url="Play/play?name={{item.name}}">
                         <view class="boxPic">
@@ -67,7 +67,7 @@
 </template>
 
 <template name="searchTxt">
-    <block wx:for="{{ranking}}">
+    <block wx:for="{{ranking}}" wx:key="*this">
         <view class="search-rank">
             <view class="searchTxt">
                 {{item.section}}
