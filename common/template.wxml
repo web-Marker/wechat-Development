@@ -10,6 +10,7 @@
     </loading>
 </template>
 
+
 <template name="ub-list">
     <template is="{{item.type=='small'?'listSmall':'listBig'}}" data="{{item}}" wx:for="{{newList}}" wx:key="*this"/>
 </template>

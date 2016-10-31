@@ -55,5 +55,4 @@
     </view>
 
     <template is="ub-list" data="{{newList}}" />
-
 </view>

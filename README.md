@@ -26,7 +26,6 @@ wechat-Development
 		* wx:key="*this" (推荐)
 		* wx:key="property" 循环的item里面其中一个属性名字
 
-
 ## DEMO (前方gif图高能预警，需等待，等待！！)
 
 ![](https://github.com/web-Marker/wechat-Development/raw/master/image/3.gif) 
