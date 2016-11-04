@@ -12,7 +12,7 @@
 
     <view class="content">
         <swiper indicator-dots="true" class="Bannerswiper" bindchange="changeSwiper" data-bg="{{item.playUrl}}">
-            <block wx:for="{{trumpArr}}">
+            <block wx:for="{{trumpArr}}" wx:key="picUrl">
                 <swiper-item>
                     <view class="swiper-item">
                         <navigator url="../Play/play?name={{item.name}}">

@@ -23,8 +23,13 @@ wechat-Development
 * 开发工具报错需要wx:key
 	* 问题原因：TypeError: Cannot read property 'MaxRequestConcurrent' of undefined
 	* 解决方案：渲染数据的时候增加属性wx:key,一般跟着wx:fo属性后面,两个方法,[官方文档有公示](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/view/wxml/list.html?t=1477656501986)
-		* wx:key="*this" (推荐)
-		* wx:key="property" 循环的item里面其中一个属性名字
+		* wx:key="*this" (上次Bug因为用了this，之后入坑了，
+		key设置this的状态应该是场景数据交互只需要请求一次的情况，一般我们常用是下面的property)
+		* wx:key="property" 循环的item里面其中一个属性名字(需要属性名字的值是唯一性，不然会引起一些不会响应的错误！！！)
+
+* 公测了,有认证号的可以再微信后台服务器设置那边设置请求接口，获取ID，在手机体验一下
+	* 可以再手机做静态页面展示 或者拉取数据本地化 弄一个appleID 就可以展示了
+	
 
 ## DEMO (前方gif图高能预警，需等待，等待！！)
 

@@ -2,7 +2,7 @@
 * @Author: mark
 * @Date:   2016-09-27 17:33:45
 * @Last Modified by:   mark
-* @Last Modified time: 2016-10-10 13:16:16
+* @Last Modified time: 2016-11-04 17:23:59
 */
 
 // mgtv API 操作
@@ -10,6 +10,7 @@ const newData = require('../Datas/mgtv.js');
 
 //创建精选页面对象
 Page({
+
     data: {
         loading: false,
         loadtxt: '正在加载',
@@ -31,11 +32,12 @@ Page({
 
         for (t in e)  
             return !1;  
-        return !0  
+        return !0 
+
     },
 
     onLoad: function(params){
-
+       
         let _this = this;
         let param = {
             API_URL: 'http://m.api.hunantv.com/channel/getDetail',
@@ -53,7 +55,7 @@ Page({
                 RollData = [],
                 lists = [],
                 obj = {};  
-            for (let i = 0; i < datas.length-10; i++) { // -10 是因为接口是按照M站的接口给的，为了避免一些接口数据格式问题,实际开发不需要-10
+            for (let i = 0; i < datas.length-10; i++) { // -20 是因为接口是按照M站的接口给的，为了避免一些接口数据格式问题,实际开发不需要-10
 
                 if( datas[i].type == 'banner' ){
                     bannerData = datas[i].templateData;
@@ -79,6 +81,7 @@ Page({
                         if(!_this.isEmptyObject(obj)){
                             lists.push(obj);
                             obj = {};
+                            obj.indexs = i;
                         }                     
 
                         if( datas[i+1].type == 'largeLandScapeNodesc' ){
@@ -89,10 +92,12 @@ Page({
                         }else{
                             obj.title = datas[i].templateData[0].name;
                             obj.type = 'small';
+                            
                         }
                     
                         obj.more = datas[i].templateData[0]['jumpChannel'] ? true : false;
                         obj.list = [];
+
                     }
 
                     if( datas[i].type == 'textMoreLink' ){
@@ -117,7 +122,7 @@ Page({
                 newList: Object.assign([], lists)
             })
 
-
+            console.log(this.data.newList)
         }).catch(e => {
 
             this.setData({
@@ -139,7 +144,6 @@ Page({
             this.setData({ currentId: id })
             this.onLoad();
         }
-
 
     }
 })
