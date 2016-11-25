@@ -2,11 +2,11 @@
 * @Author: mark
 * @Date:   2016-10-08 12:25:29
 * @Last Modified by:   mark
-* @Last Modified time: 2016-10-10 13:16:35
+* @Last Modified time: 2016-11-25 15:35:19
 */
 
 // mgtv API 操作
-let newData = require('../../Datas/mgtv.js');
+import newData from '../../Datas/mgtv.js';
 
 Page({
     data:{

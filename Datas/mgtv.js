@@ -2,10 +2,12 @@
 * @Author: mark
 * @Date:   2016-09-27 17:33:45
 * @Last Modified by:   mark
-* @Last Modified time: 2016-10-08 15:25:37
+* @Last Modified time: 2016-11-25 15:34:28
 */
 
-var Api = {
+import Promise from 'es6-promise';
+
+var newData = {
 
     //API_URL : 'http://m.api.hunantv.com/channel/getDetail',
 
@@ -38,4 +40,4 @@ var Api = {
 }
 
 
-module.exports = Api;
+export default newData ;

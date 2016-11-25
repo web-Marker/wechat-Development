@@ -2,11 +2,11 @@
 * @Author: mark
 * @Date:   2016-09-27 17:33:45
 * @Last Modified by:   mark
-* @Last Modified time: 2016-11-04 17:23:59
+* @Last Modified time: 2016-11-25 15:35:32
 */
 
 // mgtv API 操作
-const newData = require('../Datas/mgtv.js');
+import newData from '../Datas/mgtv.js';
 
 //创建精选页面对象
 Page({
