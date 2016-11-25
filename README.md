@@ -10,6 +10,11 @@ wechat-Development
 
 * 纯粹是对微信小程序的尝新以及大家分享研究，并无其他用途。
 
+##今日更新微信开发工具遇到问题(11/25)
+* 修复Promise报错
+	* 问题原因：TypeError: Cannot read property 'Promise' of undefined
+	* 解决方案：微信开发工具更新后不支持Promise对象，需要引入第三方库来支持Promise
+
 ##今日更新微信开发工具遇到问题(10/28)
 
 * Failed to load resource: net::ERR_NAME_NOT_RESOLVED http://4587851578.appservice.open.weixin.qq.com/appservice
