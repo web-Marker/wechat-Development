@@ -12,7 +12,7 @@
 
 
 <template name="ub-list">
-    <template is="{{item.type=='small'?'listSmall':'listBig'}}" data="{{item}}" wx:for="{{newList}}" wx:key="indexs"/>
+    <template is="{{item.type=='small'?'listSmall':'listBig'}}" data="{{item}}" wx:for="{{newList}}" wx:key="indexs" />
 </template>
 
 <template name="listBig">
@@ -27,7 +27,7 @@
             </view>
         </navigator>
     </view>
-    <template is="listSmall" data="{{item}}">
+    <template is="listSmall" data="{{item}}" />
 </template>
 
 
