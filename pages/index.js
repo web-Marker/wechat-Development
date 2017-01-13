@@ -2,7 +2,7 @@
 * @Author: mark
 * @Date:   2016-09-27 17:33:45
 * @Last Modified by:   mark
-* @Last Modified time: 2016-11-25 15:35:32
+* @Last Modified time: 2017-01-13 15:21:36
 */
 
 // mgtv API 操作
@@ -40,15 +40,16 @@ Page({
        
         let _this = this;
         let param = {
-            API_URL: 'http://m.api.hunantv.com/channel/getDetail',
-            data:{
-                'channelId':this.data.currentId,
-                'type':'normal'
-            },
+            API_URL: 'http://127.0.0.1/mgtvwechat/Datas/'+this.data.currentId+'.json', //替换自己的本地服务器地址
+            // data:{
+            //     'channelId':this.data.currentId,
+            //     'type':'normal'
+            // },
         };
         
         newData.result(param).then( data => {
-
+          
+            
             let datas = data.data.data,
                 bannerData = [],
                 AvatorData = [],

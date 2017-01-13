@@ -6,10 +6,14 @@ page {
     flex-direction: column;
 }
 
+.cf{
+    overflow:hidden; 
+     clear: both;  
+}
+
 .ft10{
     font-size:10px;
 }
-
 
 .fl{
     float:left;

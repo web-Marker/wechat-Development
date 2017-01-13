@@ -10,6 +10,11 @@ wechat-Development
 
 * 纯粹是对微信小程序的尝新以及大家分享研究，并无其他用途。
 
+##今日更新微信开发工具遇到问题(1/13)
+* 修复Array.length
+	* 问题原因：因为业务需要,接口关闭
+	* 解决方案：我已经数据本地化了,只要更新一下就可以,全部在Data目录里面,启动本地服务器,更改一下数据请求路径:http://127.0.0.1//+你的路径
+
 ##今日更新微信开发工具遇到问题(11/25)
 * 修复Promise报错
 	* 问题原因：TypeError: Cannot read property 'Promise' of undefined
