@@ -49,9 +49,6 @@ wechat-Development
 
 ![](https://github.com/web-Marker/wechat-Development/raw/master/image/5.gif)
 
-## 有问题加我微信
-
-![](https://github.com/web-Marker/wechat-Development/blob/master/image/code.png)
 
 ## 遇到坑(虽然之前有人说过，还是重新一下)
 
